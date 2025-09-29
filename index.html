@@ -119,18 +119,13 @@
   </footer>
 
   <!-- Chatbot widget -->
-  <script type="module">
-    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-    createChat({
-        webhookUrl: 'https://vizcondem7.app.n8n.cloud/webhook/8fe5052e-ff26-4b53-841f-c8e43c4e0737/chat',
-        initialMessages: [
-            "👋 Hi, I'm Forge. How can I help you with your automation concerns today?"
-        ],
-        theme: {
-            button: { backgroundColor: "#2563eb" }, // nice blue
-        }
-    });
+	createChat({
+		webhookUrl: 'YOUR_PRODUCTION_WEBHOOK_URL'
+	});
 </script>
 
 </body>
